@@ -1,6 +1,5 @@
 package N20_ValidParentheses;
 
-import java.util.LinkedList;
 import java.util.Stack;
 
 public class ValidParentheses {
