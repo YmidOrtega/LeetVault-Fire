@@ -1,10 +1,8 @@
-package N88_MergeSortedArray;
+package N94_BinaryTreeInorderTraversal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-
-import javax.swing.tree.TreeNode;
 
 public class BinaryTreeInorderTraversal {
     public class TreeNode {
