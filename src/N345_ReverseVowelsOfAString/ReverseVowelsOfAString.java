@@ -1,10 +1,8 @@
 package N345_ReverseVowelsOfAString;
 
-import java.util.ArrayList;
-
 public class ReverseVowelsOfAString {
     public String reverseVowels(String s) {
-        int l = 0, r = s.length() - 1, length = s.length();
+        int l = 0, r = s.length() - 1;
         char ch[] = s.toCharArray();
         while (l < r) {
             if(!isVowel(ch[l])) l++;

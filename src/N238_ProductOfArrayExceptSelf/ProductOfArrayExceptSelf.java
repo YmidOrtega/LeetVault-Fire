@@ -2,18 +2,17 @@ package N238_ProductOfArrayExceptSelf;
 
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
-        int i = 0;
-        int[] l = new int[nums.length], r = new int[nums.length];
-
-        while(i < nums.length){
-            if(nums[i] == 0){
-                nums[i] = 1;
-                for(int j = 0; j < nums.length; j++){
-                    int multi = 1;
-                    int res = multi * nums[j];
-                    multi = res;
-                }
-            }
+        int[] l = new int[nums.length], r = new int[nums.length], result = new int[nums.length];
+        l[0] = 1;
+        for (int i = 1; i < nums.length; i++){
+            l[i] = l[i - 1] * nums[i-1];
+        }
+        r[nums.length - 1] = 1;
+        for (int i = nums.length - 2; i > -1; i--){
+            r[i] = r[i + 1] * nums[i + 1];
+        }
+        for(int i = 0; i < nums.length; i++){
+            result[i] = l[i] * r[i]; 
         }
         return result;
     }
