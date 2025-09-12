@@ -1,7 +1,5 @@
 package N66_PlusOne;
 
-import java.math.BigInteger;
-
 public class PlusOne {
     // SOLUTION REAL.
     public int[] plusOne(int[] digits) {

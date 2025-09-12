@@ -20,8 +20,8 @@ public class BinaryTreeInorderTraversal {
 
 
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList();
-	    Stack<TreeNode> stack = new Stack();
+        List<Integer> list = new ArrayList<>();
+	    Stack<TreeNode> stack = new Stack<>();
 	    TreeNode cur = root;
 	    while(cur != null || !stack.isEmpty()){
 		    while(cur != null){

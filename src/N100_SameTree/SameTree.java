@@ -1,7 +1,5 @@
 package N100_SameTree;
 
-import java.util.Stack;
-
 public class SameTree {
 
     public class TreeNode {
