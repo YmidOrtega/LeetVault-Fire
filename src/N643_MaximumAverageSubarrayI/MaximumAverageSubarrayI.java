@@ -19,7 +19,7 @@ public class MaximumAverageSubarrayI {
     }
 
     //OPTIMIZED SOLUTION
-    public double findMaxAverage(int[] nums, int k) {
+    public double findMaxAverage(int[] nums, int k) {   
         int i = 0, j = i+k, sum = Arrays.stream(nums).limit(k).sum();
         double avg = (double) sum/k; 
         while(j<nums.length){
