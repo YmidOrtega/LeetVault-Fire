@@ -34,7 +34,7 @@ public class AsteroidCollision {
     }
 
     //SOLUCION 2
-    public int[] asteroidCollision(int[] asteroids) {
+    public int[] asteroidCollision2(int[] asteroids) {
         int n = asteroids.length;
         List<Integer> st = new ArrayList<>();
         for(int i = 0; i < n; i++){
