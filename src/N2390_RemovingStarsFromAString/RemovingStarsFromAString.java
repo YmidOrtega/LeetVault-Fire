@@ -1,9 +1,5 @@
 package N2390_RemovingStarsFromAString;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
 public class RemovingStarsFromAString {
     public String removeStars(String s) {
         int star = 0, i = s.length();
