@@ -7,7 +7,6 @@ Este repositorio es una colección personal de soluciones y prácticas de proble
 - **Respuestas a problemas de LeetCode:** Cada carpeta contiene la solución a un problema específico, implementada en Java, y normalmente nombrada con el número y nombre del problema, por ejemplo:
   - `N01_TwoSum/TwoSum.java`
   - `N02_AddTwoNumbers/AddTwoNumbers.java`
-- **Código comentado y estructurado:** Algunos archivos incluyen comentarios explicativos sobre la lógica aplicada, lo que facilita la comprensión y el repaso.
 - **Enfoque en buenas prácticas:** Se utilizan estructuras de datos apropiadas, manejo eficiente de condiciones y soluciones tanto iterativas como recursivas, según el problema.
 - **Ejemplos de ejecución:** Los métodos principales suelen incluir ejemplos de uso o pruebas simples para validar la solución.
 - **Organización por carpetas:** Cada problema está organizado en su propia carpeta bajo `src/`, siguiendo el formato `Nxx_NombreDelProblema`.
