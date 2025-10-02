@@ -1,33 +1,33 @@
 package N02_AddTwoNumbers;
 
 public class AddTwoNumbers {
-    public int[] addTwoNumbers(int[] l1, int[] l2) {
-        String num1 = "";
-        String num2 = "";
-        for (int j : l1) {
-            num1 = num1 + j;
-        }
-        for (int i : l2) {
-            num2 = num2 + i;
-        }
-        System.out.println(num1);
-        System.out.println(num2);
-
-        int sum = Integer.parseInt(num1) + Integer.parseInt(num2);
-        System.out.println(sum);
-
-
-        return convertToArray(sum);
-
-
+    public class ListNode{
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    private int[] convertToArray(int sum) {
-        String sumString = String.valueOf(sum);
-        int[] result = new int[sumString.length()];
-        for (int i = 0; i < sumString.length(); i++) {
-            result[i] = Character.getNumericValue(sumString.charAt(i));
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode tail = dummyHead;
+        int carry = 0;
+        while (l1 != null || l2 != null || carry != 0) {
+            int digit1 = (l1 != null) ? l1.val : 0;
+            int digit2 = (l2 != null) ? l2.val : 0;
+            int sum = digit1 + digit2 + carry;
+            int digit = sum % 10;
+            carry = sum / 10;
+            ListNode newNode = new ListNode(digit);
+            tail.next = newNode;
+            tail = tail.next;
+
+            l1 = (l1 != null) ? l1.next : null;
+            l2 = (l2 != null) ? l2.next : null;
         }
+        ListNode result = dummyHead.next;
+        dummyHead.next = null;
         return result;
     }
 }
