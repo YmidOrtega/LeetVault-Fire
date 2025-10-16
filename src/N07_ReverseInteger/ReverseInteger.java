@@ -1,4 +1,4 @@
-package N7_ReverseInteger;
+package N07_ReverseInteger;
 
 public class ReverseInteger {
     public int reverse(int x) {
