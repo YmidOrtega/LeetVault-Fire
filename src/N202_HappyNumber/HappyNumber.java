@@ -1,4 +1,4 @@
-package N202_HappyNumber
+package N202_HappyNumber;
 
 public class HappyNumber{
     private int getNext(int n) {
