@@ -1,4 +1,4 @@
-package N3_LongestSubstringWithoutRepeatingCharacters;
+package N03_LongestSubstringWithoutRepeatingCharacters;
 
 public class LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
